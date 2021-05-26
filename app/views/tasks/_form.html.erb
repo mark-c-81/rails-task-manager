@@ -1,0 +1,8 @@
+<%= simple_form_for(@task) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :details %>
+  <%= f.input :completed %>
+  <%= f.button :submit, class: "btn btn-success btn-large" %>
+  <%= link_to "Back", tasks_path, :class => "btn btn-primary btn-large" %>
+<% end %>
+
